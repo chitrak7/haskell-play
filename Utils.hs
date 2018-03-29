@@ -14,8 +14,7 @@ getDifficulty = do
 			where f x |x == "Easy"   || x == "easy"   = Easy
 				  |x == "Medium" || x == "medium" = Medium
 				  |x == "Hard"   || x == "hard"   = Hard
-				  |otherwise =  error "Not a valid difficulty"	 
-
+				  |otherwise =  error "Invalid Difficulty"
 putLine :: String -> IO ()
 putLine = putStrLn
 
